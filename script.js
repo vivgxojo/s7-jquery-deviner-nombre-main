@@ -1,0 +1,1 @@
+let aleatoire = Math.ceil(Math.random()*100); //le nombre à deviner
