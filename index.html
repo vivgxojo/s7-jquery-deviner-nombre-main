@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Devine</title>
-		<meta name="description" content="Devine le float-start border m-2 px-3 py-2">
+		<meta name="description" content="Devine le float-start border col-1 m-2 px-3 py-2">
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer ></script>
 		<script src="script.js" defer></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Devine le nombre </h1>
+		<h1 class="bg-body-secondary">Devine le nombre </h1>
 		<p>Un nombre aléatoire entre 1 et 100 a été choisi. Essaie de le trouver en moins de dix essais.
 			Pour faciliter un peu les choses, nous te dirons à chaque fois si le nombre soumis est plus petit ou plus grand que le
 			nombre choisi.</p>
@@ -19,109 +19,110 @@
 			<input type="text" id="essai">
 			<button>Soumettre</button>
 		</div>
-		<div id="messages"></div>
-		<div id="essais"></div>
+		<div id="essais">Essais précédents : </div>
+		<div id="reussi" class="bg-danger"></div>
+		<div id="messages" ></div>
 		<div>
-			<div id="1" class="float-start border m-2 px-3 py-2">001</div>
-			<div id="2" class="float-start border m-2 px-3 py-2">002</div>
-			<div id="3" class="float-start border m-2 px-3 py-2">003</div>
-			<div id="4" class="float-start border m-2 px-3 py-2">004</div>
-			<div id="5" class="float-start border m-2 px-3 py-2">005</div>
-			<div id="6" class="float-start border m-2 px-3 py-2">006</div>
-			<div id="7" class="float-start border m-2 px-3 py-2">007</div>
-			<div id="8" class="float-start border m-2 px-3 py-2">008</div>
-			<div id="9" class="float-start border m-2 px-3 py-2">009</div>
-			<div id="10" class="float-start border m-2 px-3 py-2">010</div>
-			<div id="11" class="float-start border m-2 px-3 py-2">011</div>
-			<div id="12" class="float-start border m-2 px-3 py-2">012</div>
-			<div id="13" class="float-start border m-2 px-3 py-2">013</div>
-			<div id="14" class="float-start border m-2 px-3 py-2">014</div>
-			<div id="15" class="float-start border m-2 px-3 py-2">015</div>
-			<div id="16" class="float-start border m-2 px-3 py-2">016</div>
-			<div id="17" class="float-start border m-2 px-3 py-2">017</div>
-			<div id="18" class="float-start border m-2 px-3 py-2">018</div>
-			<div id="19" class="float-start border m-2 px-3 py-2">019</div>
-			<div id="20" class="float-start border m-2 px-3 py-2">020</div>
-			<div id="21" class="float-start border m-2 px-3 py-2">021</div>
-			<div id="22" class="float-start border m-2 px-3 py-2">022</div>
-			<div id="23" class="float-start border m-2 px-3 py-2">023</div>
-			<div id="24" class="float-start border m-2 px-3 py-2">024</div>
-			<div id="25" class="float-start border m-2 px-3 py-2">025</div>
-			<div id="26" class="float-start border m-2 px-3 py-2">026</div>
-			<div id="27" class="float-start border m-2 px-3 py-2">027</div>
-			<div id="28" class="float-start border m-2 px-3 py-2">028</div>
-			<div id="29" class="float-start border m-2 px-3 py-2">029</div>
-			<div id="30" class="float-start border m-2 px-3 py-2">030</div>
-			<div id="31" class="float-start border m-2 px-3 py-2">031</div>
-			<div id="32" class="float-start border m-2 px-3 py-2">032</div>
-			<div id="33" class="float-start border m-2 px-3 py-2">033</div>
-			<div id="34" class="float-start border m-2 px-3 py-2">034</div>
-			<div id="35" class="float-start border m-2 px-3 py-2">035</div>
-			<div id="36" class="float-start border m-2 px-3 py-2">036</div>
-			<div id="37" class="float-start border m-2 px-3 py-2">037</div>
-			<div id="38" class="float-start border m-2 px-3 py-2">038</div>
-			<div id="39" class="float-start border m-2 px-3 py-2">039</div>
-			<div id="40" class="float-start border m-2 px-3 py-2">040</div>
-			<div id="41" class="float-start border m-2 px-3 py-2">041</div>
-			<div id="42" class="float-start border m-2 px-3 py-2">042</div>
-			<div id="43" class="float-start border m-2 px-3 py-2">043</div>
-			<div id="44" class="float-start border m-2 px-3 py-2">044</div>
-			<div id="45" class="float-start border m-2 px-3 py-2">045</div>
-			<div id="46" class="float-start border m-2 px-3 py-2">046</div>
-			<div id="47" class="float-start border m-2 px-3 py-2">047</div>
-			<div id="48" class="float-start border m-2 px-3 py-2">048</div>
-			<div id="49" class="float-start border m-2 px-3 py-2">049</div>
-			<div id="50" class="float-start border m-2 px-3 py-2">050</div>
-			<div id="51" class="float-start border m-2 px-3 py-2">051</div>
-			<div id="52" class="float-start border m-2 px-3 py-2">052</div>
-			<div id="53" class="float-start border m-2 px-3 py-2">053</div>
-			<div id="54" class="float-start border m-2 px-3 py-2">054</div>
-			<div id="55" class="float-start border m-2 px-3 py-2">055</div>
-			<div id="56" class="float-start border m-2 px-3 py-2">056</div>
-			<div id="57" class="float-start border m-2 px-3 py-2">057</div>
-			<div id="58" class="float-start border m-2 px-3 py-2">058</div>
-			<div id="59" class="float-start border m-2 px-3 py-2">059</div>
-			<div id="60" class="float-start border m-2 px-3 py-2">060</div>
-			<div id="61" class="float-start border m-2 px-3 py-2">061</div>
-			<div id="62" class="float-start border m-2 px-3 py-2">062</div>
-			<div id="63" class="float-start border m-2 px-3 py-2">063</div>
-			<div id="64" class="float-start border m-2 px-3 py-2">064</div>
-			<div id="65" class="float-start border m-2 px-3 py-2">065</div>
-			<div id="66" class="float-start border m-2 px-3 py-2">066</div>
-			<div id="67" class="float-start border m-2 px-3 py-2">067</div>
-			<div id="68" class="float-start border m-2 px-3 py-2">068</div>
-			<div id="69" class="float-start border m-2 px-3 py-2">069</div>
-			<div id="70" class="float-start border m-2 px-3 py-2">070</div>
-			<div id="71" class="float-start border m-2 px-3 py-2">071</div>
-			<div id="72" class="float-start border m-2 px-3 py-2">072</div>
-			<div id="73" class="float-start border m-2 px-3 py-2">073</div>
-			<div id="74" class="float-start border m-2 px-3 py-2">074</div>
-			<div id="75" class="float-start border m-2 px-3 py-2">075</div>
-			<div id="76" class="float-start border m-2 px-3 py-2">076</div>
-			<div id="77" class="float-start border m-2 px-3 py-2">077</div>
-			<div id="78" class="float-start border m-2 px-3 py-2">078</div>
-			<div id="79" class="float-start border m-2 px-3 py-2">079</div>
-			<div id="80" class="float-start border m-2 px-3 py-2">080</div>
-			<div id="81" class="float-start border m-2 px-3 py-2">081</div>
-			<div id="82" class="float-start border m-2 px-3 py-2">082</div>
-			<div id="83" class="float-start border m-2 px-3 py-2">083</div>
-			<div id="84" class="float-start border m-2 px-3 py-2">084</div>
-			<div id="85" class="float-start border m-2 px-3 py-2">085</div>
-			<div id="86" class="float-start border m-2 px-3 py-2">086</div>
-			<div id="87" class="float-start border m-2 px-3 py-2">087</div>
-			<div id="88" class="float-start border m-2 px-3 py-2">088</div>
-			<div id="89" class="float-start border m-2 px-3 py-2">089</div>
-			<div id="90" class="float-start border m-2 px-3 py-2">090</div>
-			<div id="91" class="float-start border m-2 px-3 py-2">091</div>
-			<div id="92" class="float-start border m-2 px-3 py-2">092</div>
-			<div id="93" class="float-start border m-2 px-3 py-2">093</div>
-			<div id="94" class="float-start border m-2 px-3 py-2">094</div>
-			<div id="95" class="float-start border m-2 px-3 py-2">095</div>
-			<div id="96" class="float-start border m-2 px-3 py-2">096</div>
-			<div id="97" class="float-start border m-2 px-3 py-2">097</div>
-			<div id="98" class="float-start border m-2 px-3 py-2">098</div>
-			<div id="99" class="float-start border m-2 px-3 py-2">099</div>
-			<div id="100" class="float-start border m-2 px-3 py-2">100</div>
+			<div id="1" class="float-start border col-1 m-2 px-3 py-2">001</div>
+			<div id="2" class="float-start border col-1 m-2 px-3 py-2">002</div>
+			<div id="3" class="float-start border col-1 m-2 px-3 py-2">003</div>
+			<div id="4" class="float-start border col-1 m-2 px-3 py-2">004</div>
+			<div id="5" class="float-start border col-1 m-2 px-3 py-2">005</div>
+			<div id="6" class="float-start border col-1 m-2 px-3 py-2">006</div>
+			<div id="7" class="float-start border col-1 m-2 px-3 py-2">007</div>
+			<div id="8" class="float-start border col-1 m-2 px-3 py-2">008</div>
+			<div id="9" class="float-start border col-1 m-2 px-3 py-2">009</div>
+			<div id="10" class="float-start border col-1 m-2 px-3 py-2">010</div>
+			<div id="11" class="float-start border col-1 m-2 px-3 py-2">011</div>
+			<div id="12" class="float-start border col-1 m-2 px-3 py-2">012</div>
+			<div id="13" class="float-start border col-1 m-2 px-3 py-2">013</div>
+			<div id="14" class="float-start border col-1 m-2 px-3 py-2">014</div>
+			<div id="15" class="float-start border col-1 m-2 px-3 py-2">015</div>
+			<div id="16" class="float-start border col-1 m-2 px-3 py-2">016</div>
+			<div id="17" class="float-start border col-1 m-2 px-3 py-2">017</div>
+			<div id="18" class="float-start border col-1 m-2 px-3 py-2">018</div>
+			<div id="19" class="float-start border col-1 m-2 px-3 py-2">019</div>
+			<div id="20" class="float-start border col-1 m-2 px-3 py-2">020</div>
+			<div id="21" class="float-start border col-1 m-2 px-3 py-2">021</div>
+			<div id="22" class="float-start border col-1 m-2 px-3 py-2">022</div>
+			<div id="23" class="float-start border col-1 m-2 px-3 py-2">023</div>
+			<div id="24" class="float-start border col-1 m-2 px-3 py-2">024</div>
+			<div id="25" class="float-start border col-1 m-2 px-3 py-2">025</div>
+			<div id="26" class="float-start border col-1 m-2 px-3 py-2">026</div>
+			<div id="27" class="float-start border col-1 m-2 px-3 py-2">027</div>
+			<div id="28" class="float-start border col-1 m-2 px-3 py-2">028</div>
+			<div id="29" class="float-start border col-1 m-2 px-3 py-2">029</div>
+			<div id="30" class="float-start border col-1 m-2 px-3 py-2">030</div>
+			<div id="31" class="float-start border col-1 m-2 px-3 py-2">031</div>
+			<div id="32" class="float-start border col-1 m-2 px-3 py-2">032</div>
+			<div id="33" class="float-start border col-1 m-2 px-3 py-2">033</div>
+			<div id="34" class="float-start border col-1 m-2 px-3 py-2">034</div>
+			<div id="35" class="float-start border col-1 m-2 px-3 py-2">035</div>
+			<div id="36" class="float-start border col-1 m-2 px-3 py-2">036</div>
+			<div id="37" class="float-start border col-1 m-2 px-3 py-2">037</div>
+			<div id="38" class="float-start border col-1 m-2 px-3 py-2">038</div>
+			<div id="39" class="float-start border col-1 m-2 px-3 py-2">039</div>
+			<div id="40" class="float-start border col-1 m-2 px-3 py-2">040</div>
+			<div id="41" class="float-start border col-1 m-2 px-3 py-2">041</div>
+			<div id="42" class="float-start border col-1 m-2 px-3 py-2">042</div>
+			<div id="43" class="float-start border col-1 m-2 px-3 py-2">043</div>
+			<div id="44" class="float-start border col-1 m-2 px-3 py-2">044</div>
+			<div id="45" class="float-start border col-1 m-2 px-3 py-2">045</div>
+			<div id="46" class="float-start border col-1 m-2 px-3 py-2">046</div>
+			<div id="47" class="float-start border col-1 m-2 px-3 py-2">047</div>
+			<div id="48" class="float-start border col-1 m-2 px-3 py-2">048</div>
+			<div id="49" class="float-start border col-1 m-2 px-3 py-2">049</div>
+			<div id="50" class="float-start border col-1 m-2 px-3 py-2">050</div>
+			<div id="51" class="float-start border col-1 m-2 px-3 py-2">051</div>
+			<div id="52" class="float-start border col-1 m-2 px-3 py-2">052</div>
+			<div id="53" class="float-start border col-1 m-2 px-3 py-2">053</div>
+			<div id="54" class="float-start border col-1 m-2 px-3 py-2">054</div>
+			<div id="55" class="float-start border col-1 m-2 px-3 py-2">055</div>
+			<div id="56" class="float-start border col-1 m-2 px-3 py-2">056</div>
+			<div id="57" class="float-start border col-1 m-2 px-3 py-2">057</div>
+			<div id="58" class="float-start border col-1 m-2 px-3 py-2">058</div>
+			<div id="59" class="float-start border col-1 m-2 px-3 py-2">059</div>
+			<div id="60" class="float-start border col-1 m-2 px-3 py-2">060</div>
+			<div id="61" class="float-start border col-1 m-2 px-3 py-2">061</div>
+			<div id="62" class="float-start border col-1 m-2 px-3 py-2">062</div>
+			<div id="63" class="float-start border col-1 m-2 px-3 py-2">063</div>
+			<div id="64" class="float-start border col-1 m-2 px-3 py-2">064</div>
+			<div id="65" class="float-start border col-1 m-2 px-3 py-2">065</div>
+			<div id="66" class="float-start border col-1 m-2 px-3 py-2">066</div>
+			<div id="67" class="float-start border col-1 m-2 px-3 py-2">067</div>
+			<div id="68" class="float-start border col-1 m-2 px-3 py-2">068</div>
+			<div id="69" class="float-start border col-1 m-2 px-3 py-2">069</div>
+			<div id="70" class="float-start border col-1 m-2 px-3 py-2">070</div>
+			<div id="71" class="float-start border col-1 m-2 px-3 py-2">071</div>
+			<div id="72" class="float-start border col-1 m-2 px-3 py-2">072</div>
+			<div id="73" class="float-start border col-1 m-2 px-3 py-2">073</div>
+			<div id="74" class="float-start border col-1 m-2 px-3 py-2">074</div>
+			<div id="75" class="float-start border col-1 m-2 px-3 py-2">075</div>
+			<div id="76" class="float-start border col-1 m-2 px-3 py-2">076</div>
+			<div id="77" class="float-start border col-1 m-2 px-3 py-2">077</div>
+			<div id="78" class="float-start border col-1 m-2 px-3 py-2">078</div>
+			<div id="79" class="float-start border col-1 m-2 px-3 py-2">079</div>
+			<div id="80" class="float-start border col-1 m-2 px-3 py-2">080</div>
+			<div id="81" class="float-start border col-1 m-2 px-3 py-2">081</div>
+			<div id="82" class="float-start border col-1 m-2 px-3 py-2">082</div>
+			<div id="83" class="float-start border col-1 m-2 px-3 py-2">083</div>
+			<div id="84" class="float-start border col-1 m-2 px-3 py-2">084</div>
+			<div id="85" class="float-start border col-1 m-2 px-3 py-2">085</div>
+			<div id="86" class="float-start border col-1 m-2 px-3 py-2">086</div>
+			<div id="87" class="float-start border col-1 m-2 px-3 py-2">087</div>
+			<div id="88" class="float-start border col-1 m-2 px-3 py-2">088</div>
+			<div id="89" class="float-start border col-1 m-2 px-3 py-2">089</div>
+			<div id="90" class="float-start border col-1 m-2 px-3 py-2">090</div>
+			<div id="91" class="float-start border col-1 m-2 px-3 py-2">091</div>
+			<div id="92" class="float-start border col-1 m-2 px-3 py-2">092</div>
+			<div id="93" class="float-start border col-1 m-2 px-3 py-2">093</div>
+			<div id="94" class="float-start border col-1 m-2 px-3 py-2">094</div>
+			<div id="95" class="float-start border col-1 m-2 px-3 py-2">095</div>
+			<div id="96" class="float-start border col-1 m-2 px-3 py-2">096</div>
+			<div id="97" class="float-start border col-1 m-2 px-3 py-2">097</div>
+			<div id="98" class="float-start border col-1 m-2 px-3 py-2">098</div>
+			<div id="99" class="float-start border col-1 m-2 px-3 py-2">099</div>
+			<div id="100" class="float-start border col-1 m-2 px-3 py-2">100</div>
 		</div>
 	</body>
 </html>
